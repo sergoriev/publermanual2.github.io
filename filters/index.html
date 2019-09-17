@@ -1,0 +1,738 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Анализ рекламных постов ВК - Publer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Publer" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Publer
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Анализ рекламных постов ВК
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Publer" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Publer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Добро пожаловать" class="md-nav__link">
+      Добро пожаловать
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Рекламные посты
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Рекламные посты
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Анализ рекламных постов ВК
+      </label>
+    
+    <a href="./" title="Анализ рекламных постов ВК" class="md-nav__link md-nav__link--active">
+      Анализ рекламных постов ВК
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Привет, друзья!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Обзор фильтров
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Анализ рекламных постов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Вывод
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Удачи!
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mention/" title="Анализ упоминаний ВК" class="md-nav__link">
+      Анализ упоминаний ВК
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../repost/" title="Анализ репостов ВК" class="md-nav__link">
+      Анализ репостов ВК
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Odnoklasniki/" title="Анализ постов в Одноклассниках" class="md-nav__link">
+      Анализ постов в Одноклассниках
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../InstSNG/" title="Анализ постов инст СНГ" class="md-nav__link">
+      Анализ постов инст СНГ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../burj/" title="Анализ постов инст БУРЖ" class="md-nav__link">
+      Анализ постов инст БУРЖ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Паблики/профили
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Паблики/профили
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../publicsVK/" title="Подбор пабликов Вконтакте" class="md-nav__link">
+      Подбор пабликов Вконтакте
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../publicsOK/" title="Подбор групп в Одноклассниках" class="md-nav__link">
+      Подбор групп в Одноклассниках
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../profilesinstsng/" title="Подбор профилей в Instagram СНГ" class="md-nav__link">
+      Подбор профилей в Instagram СНГ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../profilesinstburj/" title="Подбор профилей Instagram БУРЖ" class="md-nav__link">
+      Подбор профилей Instagram БУРЖ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../targetVK/" title="Как работать с разделом "Таргет ВК"" class="md-nav__link">
+      Как работать с разделом "Таргет ВК"
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      myTarget
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        myTarget
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobapps/" title="Мобильные приложения" class="md-nav__link">
+      Мобильные приложения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web/" title="Анализ объявлений в WEB-ленте" class="md-nav__link">
+      Анализ объявлений в WEB-ленте
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../teasers/" title="Анализ тизеров" class="md-nav__link">
+      Анализ тизеров
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobsites/" title="Мобайл сайты" class="md-nav__link">
+      Мобайл сайты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../teaserwebs/" title="Тизерные сети" class="md-nav__link">
+      Тизерные сети
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Привет, друзья!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Обзор фильтров
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Анализ рекламных постов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Вывод
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Удачи!
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">Анализ рекламных постов ВКонтакте</h1>
+<h2 id="_2"><strong>Привет, друзья!</strong></h2>
+<p>Планируете настраивать рекламные посты ВКонтакте и хотите посмотреть, какие креативы сейчас заходят? А может быть вам нужно проанализировать объявления конкурентов? В этом вам поможет сервис мониторинга рекламы <a href="https://publer.pro">publer.pro</a> и наша статья, в которой мы подробно расскажем, как это сделать.</p>
+<h2 id="_3"><strong>Обзор фильтров</strong></h2>
+<p>Для того чтобы поиск объявлений был релевантным вашим запросам, в <a href="https://publer.pro">publer.pro</a> есть множество фильтров:</p>
+<p><img alt="Добавьте описание" src="https://sun9-17.userapi.com/c849028/v849028934/18e2d3/Pk5jsCNCZao.jpg" /></p>
+<p>— <strong>Период</strong>. Здесь вы можете выбрать период времени, за который будут отображаться посты. Если вам нужны конкретные даты, вы можете выбрать их вручную.</p>
+<p>— <strong>Сортировка</strong>. С помощью этого фильтра вы можете выбрать, в какой последовательности будут отображаться посты. Например, вы можете сначала посмотреть самые просматриваемые публикации или те, которые вышли в ближайшее время.</p>
+<p>— <strong>На странице</strong>. Здесь вы можете выбрать, сколько объявлений будет отображаться на одной странице поиска.</p>
+<p>— <strong>Биржа</strong>. С помощью этого фильтра вы можете выбрать рекламные посты, которые были размещены через определённую биржу рекламы.</p>
+<p>— <strong>В тексте</strong>. В эту графу вы можете вбить ключевой запрос для поиска. Например, если вы напишете «курсы английского языка», в выдачу попадут объявления, в тексте которых есть эта фраза. Обратите внимание, если вы будете использовать простые формы слов, выдача будет шире. То есть по запросу «готов к ЕГЭ» вы увидите объявления с фразами «подГОТОВься к ЕГЭ», «ГОТОВим к ЕГЭ» и так далее.</p>
+<p>— <strong>В ссылках</strong>. С помощью этого фильтра вы можете искать объявления, в которых есть какая-то определённая ссылка. Например, это может быть сайт вашего конкурента.</p>
+<p>— <strong>По картинке</strong>. С помощью этого фильтра вы можете искать объявления с нужной вам картинкой. Для этого вам нужно указать в поле ввода ссылку на картинку во ВКонтакте.</p>
+<p>— <strong>В группе</strong>. С помощью этого фильтра вы можете увидеть все рекламные объявления в какой-то определённой группе. Для этого вам нужно указать в поле ввода ссылку на группу или её ID. Обратите внимание, поиск ведётся только по открытым группам с более чем 10 тысячами подписчиков.</p>
+<p>— <strong>CPM</strong>. Если вы ищете объявления, размещённые через биржу рекламы, вы можете указать максимальный CPM. Соответственно, вы увидите только объявления, у которых CPM меньше указанного вами значения.</p>
+<p>— <strong>Лайков от</strong>. С помощью этого фильтра вы можете отсеять непопулярные посты. Например, если вы напишете в поле ввода 100, вы увидите только посты, набравшие большее количество лайков.</p>
+<p>— <strong>Цена поста</strong>. Этот фильтр доступен, только если вы ищете посты, размещённые через какую-то определённую биржу рекламы. Вы можете указать как минимальную стоимость, так и максимальную.</p>
+<p>— <strong>ER</strong> — степень вовлечённости пользователей. Этот показатель рассчитывается по формуле лайки+репосты+комментарии / количество просмотров поста. Соответственно, вы можете посмотреть только посты, которые заинтересовали пользователей.</p>
+<p>— <strong>Страна</strong>. Если вам нужны паблики, в которых большое количество подписчиков из определённой страны, поставьте галочку в этом фильтре рядом с RU, UA, BY или KZ.</p>
+<h2 id="_4"><strong>Анализ рекламных постов</strong></h2>
+<p>Давайте представим, что вы продвигаете часы через рекламные посты ВКонтакте и разберём на примере, как работать и анализировать публикации с помощью <a href="https://publer.pro">publer.pro</a>. Выставим фильтры:</p>
+<p><img alt="Выставим фильтры" src="https://sun9-13.userapi.com/c851428/v851428458/113608/G_GwGJ_9hDQ.jpg" /></p>
+<p>Анализировать будем рекламные посты, которые вышли за последнюю неделю. В графе в тексте напишем «Часы» и выберем сортировку по просмотрам.</p>
+<blockquote>
+<p><strong>Важно!</strong> Некоторые недобросовестные вебмастера накручивают лайки на своих рекламных
+записях. Если вы хотите посмотреть популярные публикации по своей теме, лучше выбирать 
+сортировку по просмотрам.</p>
+</blockquote>
+<p>Выбрав необходимые параметры, вы можете нажать на кнопку «Найти посты» или просто нажать Enter. Тогда перед вами появятся необходимые объявления — с картинками и текстом.
+Если вам нужно найти только картинки, вы можете нажать на «Найти креативы».</p>
+<blockquote>
+<p><strong>Важно!</strong> Поиск по креативам работает только если вы ввели поисковый запрос в графу «В 
+тексте», либо если вы ищете рекламные объявления с определённой ссылкой или в конкретной 
+группе.</p>
+</blockquote>
+<p>Если вы планируете регулярно мониторить рекламные объявления с одними и теми же фильтрами, вы можете сохранить запрос и не вводить в следующий раз данные повторно.
+После того, как вы нажмёте на «Найти посты», появится ещё одна кнопка «Активность». Нажав на неё, вы сможете увидеть, в какое время чаще всего выходят посты по вашему запросу в среднем во всех пабликах.</p>
+<p><img alt="" src="https://sun9-19.userapi.com/c851428/v851428372/114dc7/sLNKA-n414M.jpg" /></p>
+<p>В выдаче вы будете видеть рекламные объявления вот в таком формате:</p>
+<p><img alt="" src="https://sun9-52.userapi.com/c851428/v851428458/113617/0EJKeWdgd1M.jpg" /></p>
+<p>Давайте поподробнее разберём детали, которые помогут вам в работе:</p>
+<p><img alt="" src="https://sun9-28.userapi.com/c851428/v851428520/114a92/3U5kVvCaNHQ.jpg" /></p>
+<p>1) Название сообщества, в котором было размещено объявление. Оно кликабельное, нажав на него, вы можете перейти во ВКонтакте и изучить паблик подробнее.</p>
+<p>2) Чёрным написано количество подписчиков данного паблика. В скобках написано изменение количества подписчиков за последние сутки.</p>
+<p>3) Информация о рекламном посте: дата публикации, количество лайков, репостов, комментариев и просмотров, ER, CPM с биржи, через которую было размещено объявление и цена поста.</p>
+<p>4) Если вы нажмёте на «анализ паблика», в новом окне откроется подробная информация про группу, в которой было размещено объявление:</p>
+<p><img alt="подробная инфа" src="https://sun9-4.userapi.com/c851428/v851428520/114a80/L4-7YOGKFLo.jpg" /></p>
+<p>Здесь вы можете:</p>
+<ul>
+<li>
+<p>Проверить пересечение аудиторий в двух пабликах;</p>
+</li>
+<li>
+<p>Узнать информацию о том, когда в этой группе выходили рекламные посты;</p>
+</li>
+<li>
+<p>Проанализировать активность подписчиков по дням недели и часам;</p>
+</li>
+<li>
+<p>Проанализировать аудиторию сообщества;</p>
+</li>
+<li>
+<p>Узнать средние показатели, которые набирают рекламные посты.</p>
+</li>
+</ul>
+<p>5) Нажав на кнопку «Все посты», вы можете проанализировать все рекламные объявления, которые выходили в данном паблике. Это полезно, если вы хотите проверить, как часто рекламировался ваш товар в группе и не выжата ли её аудитория.</p>
+<p>6) Нажав на звёздочку, вы можете сохранить данное объявление в «Избранное» для последующего анализа.</p>
+<p>7) Если навести курсор на значок с графиком, вы увидите статистику по данному паблику:</p>
+<p><img alt="статистка" src="https://sun9-33.userapi.com/c851428/v851428520/114a78/uOIT-UyWugY.jpg" /></p>
+<p>8) Если нажать на значок со стрелочкой, вы перейдёте по ссылке, указанной в объявлении.</p>
+<p>9) Если вы нажмёте на значок с лупой, вы сможете проанализировать все рекламные объявления с этой ссылкой.</p>
+<p>10) Если вы нажмёте на эту иконку, вы сможете проанализировать все рекламные посты с данным изображением.
+Помимо этого, вы можете проанализировать когда и сколько постов по вашему запросу выходило. Для этого вам нужно нажать на кнопку «Динамика», которая находится наверху страницы, под фильтрами:</p>
+<p><img alt="динамика" src="https://sun9-25.userapi.com/c851428/v851428372/114dd0/5IIpJIJROH8.jpg" /></p>
+<p>Это полезно, если нужно определить «отжатость» вашего товара или выяснить сезонность оффера. Например, вот так выглядит динамика постов с ключевым словом «Удобрение»:</p>
+<p><img alt="ключевые слова" src="https://sun9-25.userapi.com/c851428/v851428372/114df4/F20Xhdwc1xo.jpg" /></p>
+<p>Как видите, начиная с весны, постов стало больше. В случае с удобрением это логично, но для вашего товара сезонность может быть не настолько очевидна.</p>
+<h2 id="_5"><strong>Вывод</strong></h2>
+<p>Итак, мы разобрали все основные функции, которые помогут вам создать конвертящие рекламные посты ВКонтакте. Анализируйте действия конкурентов, придумывайте огненные крео и увеличивайте свой профит.</p>
+<h2 id="_6"><strong>Удачи!</strong></h2>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Добро пожаловать" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Добро пожаловать
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mention/" title="Анализ упоминаний ВК" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Анализ упоминаний ВК
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
